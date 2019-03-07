@@ -8,7 +8,7 @@
 /* Цвета */
 @color-white: #ffffff;
 
-/* Цвет текста */
+/* Текста */
 @font-brown: #c7b299;
 @font-grey: #555555;
 /* Цвет фона */
@@ -38,7 +38,9 @@ a {
 }
 
 p {
-    font-family: @font-title;
+    font-family: @font-base;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 ul {
@@ -141,10 +143,6 @@ header {
         line-height: 54px;
         color: @color-white;
     }
-}
-
-#dqv3a {
-    fill: #ff0000;
 }
 
 .menu {
@@ -268,6 +266,14 @@ header {
 .footer {
     &-top {
         background-color: #191919;
+
+        &-column {
+            max-width: 260px;
+        }
+
+        &-p {}
+
+        &-a {}
     }
 
     &-bottom {
@@ -285,11 +291,16 @@ header {
             display: flex;
         }
 
-        &-li, &-a {
+        &-li,
+        &-a {
             color: @font-grey;
             font-family: @font-base;
             font-size: 13px;
             font-weight: 300;
+        }
+
+        &-a:hover {
+            color: @color-white;
         }
 
         &-li:after {
@@ -302,7 +313,11 @@ header {
             color: #959595;
 
             &-faq {
-                color: @font-brown;;
+                color: @font-brown;
+            }
+
+            &-faq:hover {
+                color: #d3c1ad;
             }
         }
     }

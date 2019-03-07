@@ -2,7 +2,7 @@
 /* Шрифты*/
 /* Отступы */
 /* Цвета */
-/* Цвет текста */
+/* Текста */
 /* Цвет фона */
 body,
 html {
@@ -23,7 +23,9 @@ a {
   text-decoration: none;
 }
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
 }
 ul {
   list-style: none;
@@ -107,9 +109,6 @@ header {
   letter-spacing: -1.36px;
   line-height: 54px;
   color: #ffffff;
-}
-#dqv3a {
-  fill: #ff0000;
 }
 .menu {
   display: flex;
@@ -205,6 +204,9 @@ header {
 .footer-top {
   background-color: #191919;
 }
+.footer-top-column {
+  max-width: 260px;
+}
 .footer-bottom {
   background-color: #111111;
 }
@@ -224,6 +226,9 @@ header {
   font-size: 13px;
   font-weight: 300;
 }
+.footer-bottom-a:hover {
+  color: #ffffff;
+}
 .footer-bottom-li:after {
   content: "|";
   color: #252525;
@@ -234,5 +239,8 @@ header {
 }
 .footer-bottom-span-faq {
   color: #c7b299;
+}
+.footer-bottom-span-faq:hover {
+  color: #d3c1ad;
 }
 /* / Footer */
