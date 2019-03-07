@@ -74,6 +74,13 @@ button:hover {
     background-color: #d3c1ad;
 }
 
+time {
+    font-family: @font-base;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
 .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -264,8 +271,20 @@ header {
 /* Последний блок - Footer */
 
 .footer {
+    &-h3 {
+        color: @color-white;
+        font-family: @font-title;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
     &-top {
         background-color: #191919;
+
+        &-cont {
+            display: flex;
+            justify-content: space-between;
+        }
 
         &-column {
             max-width: 260px;

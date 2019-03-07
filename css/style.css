@@ -54,6 +54,12 @@ button:active {
 button:hover {
   background-color: #d3c1ad;
 }
+time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
 .container {
   max-width: 1230px;
   margin: 0 auto;
