@@ -98,12 +98,18 @@ header {
 .logo-img {
   float: left;
 }
+.logo-img use {
+  fill: #ff0000;
+}
 .logo-name {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: -1.36px;
   line-height: 54px;
   color: #ffffff;
+}
+#dqv3a {
+  fill: #ff0000;
 }
 .menu {
   display: flex;
@@ -195,3 +201,38 @@ header {
   margin: 30px auto 0;
 }
 /* /Блок с возможностями */
+/* Последний блок - Footer */
+.footer-top {
+  background-color: #191919;
+}
+.footer-bottom {
+  background-color: #111111;
+}
+.footer-bottom-cont {
+  height: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom-ul {
+  display: flex;
+}
+.footer-bottom-li,
+.footer-bottom-a {
+  color: #555555;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+.footer-bottom-li:after {
+  content: "|";
+  color: #252525;
+  padding: 0 6px;
+}
+.footer-bottom-span {
+  color: #959595;
+}
+.footer-bottom-span-faq {
+  color: #c7b299;
+}
+/* / Footer */

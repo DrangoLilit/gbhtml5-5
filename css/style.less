@@ -130,6 +130,10 @@ header {
         float: left;
     }
 
+    &-img use {
+        fill: #ff0000;
+    }
+
     &-name {
         font-size: 34px;
         font-weight: 400;
@@ -137,6 +141,10 @@ header {
         line-height: 54px;
         color: @color-white;
     }
+}
+
+#dqv3a {
+    fill: #ff0000;
 }
 
 .menu {
@@ -223,6 +231,7 @@ header {
     &-block:hover &-hr {
         border: 1px solid @font-brown;
     }
+
     &-img {
         color: @font-grey;
     }
@@ -253,3 +262,50 @@ header {
 
 
 /* /Блок с возможностями */
+
+/* Последний блок - Footer */
+
+.footer {
+    &-top {
+        background-color: #191919;
+    }
+
+    &-bottom {
+        background-color: @dark-grey;
+
+
+        &-cont {
+            height: 111px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-ul {
+            display: flex;
+        }
+
+        &-li, &-a {
+            color: @font-grey;
+            font-family: @font-base;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &-li:after {
+            content: "|";
+            color: #252525;
+            padding: 0 6px;
+        }
+
+        &-span {
+            color: #959595;
+
+            &-faq {
+                color: @font-brown;;
+            }
+        }
+    }
+}
+
+/* / Footer */
