@@ -3,7 +3,7 @@
 @font-title: 'Raleway', sans-serif;
 
 /* Отступы */
-@container-padding: 105px;
+@container-padding: 15px;
 
 /* Цвета */
 @color-white: #ffffff;
@@ -75,6 +75,7 @@ button:hover {
 .container {
     max-width: 1230px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* Блок первый - меню, слайдер */
@@ -142,8 +143,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
+    margin-top: 40px;
     width: 100%;
+    padding: 0 @container-padding;
 
 
     &-ul {
@@ -203,23 +205,35 @@ header {
 
 /* Блок второй - с возможностями */
 
-.skills {
+.service {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px
+    align-items: center;
+    padding: 80px @container-padding;
 
     &-block {
         max-width: 260px;
         text-align: center;
     }
 
-    &-img {}
+    &-block:hover &-h3 {
+        color: @font-brown;
+    }
+
+    &-block:hover &-hr {
+        border: 1px solid @font-brown;
+    }
+    &-img {
+        color: @font-grey;
+    }
 
     &-h3 {
         color: @font-grey;
         font-family: @font-title;
         font-size: 22px;
         font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 
     &-p {
@@ -233,7 +247,7 @@ header {
     &-hr {
         width: 70px;
         border: 1px solid #f1eee9;
-        margin: 0 auto;
+        margin: 30px auto 0;
     }
 }
 

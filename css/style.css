@@ -55,6 +55,7 @@ button:hover {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 /* Блок первый - меню, слайдер */
 header {
@@ -108,8 +109,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  margin-top: 40px;
   width: 100%;
+  padding: 0 15px;
 }
 .menu-ul {
   display: flex;
@@ -153,30 +155,43 @@ header {
 }
 /* / Блок первый */
 /* Блок второй - с возможностями */
-.skills {
+.service {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 80px 15px;
 }
-.skills-block {
+.service-block {
   max-width: 260px;
   text-align: center;
 }
-.skills-h3 {
+.service-block:hover .service-h3 {
+  color: #c7b299;
+}
+.service-block:hover .service-hr {
+  border: 1px solid #c7b299;
+}
+.service-img {
+  color: #555555;
+}
+.service-h3 {
   color: #555555;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
-.skills-p {
+.service-p {
   color: #8c8c8c;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
 }
-.skills-hr {
+.service-hr {
   width: 70px;
   border: 1px solid #f1eee9;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 /* /Блок с возможностями */
