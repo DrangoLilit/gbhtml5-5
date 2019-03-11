@@ -33,12 +33,22 @@ h1 {
     padding: 14px 0;
 }
 
+h2 {}
+
+h3 {
+    color: @color-white;
+    font-family: @font-title;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
 }
 
 p {
     font-family: @font-base;
+    font-size: 14px;
     font-weight: 300;
     line-height: 20px;
 }
@@ -85,6 +95,10 @@ time {
     max-width: 1230px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
 }
 
 /* Блок первый - меню, слайдер */
@@ -239,6 +253,11 @@ header {
 
     &-img {
         color: @font-grey;
+        transition: all 1s;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
     }
 
     &-h3 {
@@ -268,31 +287,169 @@ header {
 
 /* /Блок с возможностями */
 
+/* Блок Блог */
+.blog{
+    &-posts{
+        
+    }
+}
+
+/* /Блок Блог*/
+
+/* Блок партнеры */
+.partner {
+    height: 489px;
+    background: url(../img/bg-partners.jpg);
+
+    &-cont {
+        height: 100%;
+        padding-left: @container-padding;
+        padding-right: @container-padding;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-img {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+}
+
+/* / Блок партнеры */
+
 /* Последний блок - Footer */
+
+.recent-post {
+    border-bottom: 1px solid #252525;
+    padding: 20px 0;
+
+
+    &:first-child {
+        /* не работает */
+        padding-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+
+    &-time {
+        color: #363636;
+        margin-bottom: 10px;
+        display: block;
+
+        &-invert {
+            color: @color-white;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+
+}
+
+.twit {
+    border-bottom: 1px solid #252525;
+    padding: 20px 0;
+
+    &:first-child {
+        /* не работает */
+        padding-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    &-nickname,
+    &-hashtag {
+        color: #00bff3;
+    }
+
+    &-time {
+        color: #363636;
+        font-family: @font-base;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    &-a {
+        color: #959595;
+    }
+}
 
 .footer {
     &-h3 {
-        color: @color-white;
-        font-family: @font-title;
-        font-size: 24px;
-        font-weight: 700;
+        padding: 28px 0;
+    }
+
+    &-readmore {
+        margin-top: 30px;
+        display: block;
+    }
+
+    &-logo {
+        padding-bottom: 29px;
+        display: block;
     }
 
     &-top {
         background-color: #191919;
+        padding: 80px 0;
 
         &-cont {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
+            padding-left: @container-padding;
+            padding-right: @container-padding;
         }
 
         &-column {
             max-width: 260px;
         }
 
-        &-p {}
+        &-p {
+            color: @font-grey;
 
-        &-a {}
+            &-invert {
+                color: @font-brown;
+            }
+        }
+
+        &-a {
+            color: #d1d1d1;
+            font-family: @font-base;
+            font-size: 14px;
+            font-weight: 400;
+
+            &:after {
+                content: url(../img/icon/arrow-right.png);
+                padding-left: 10px;
+            }
+        }
+
+        &-widget {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: start;
+
+            &-img {
+                width: 49%;
+                padding-bottom: 5px;
+
+            }
+        }
     }
 
     &-bottom {
@@ -304,6 +461,8 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding-left: @container-padding;
+            padding-right: @container-padding;
         }
 
         &-ul {

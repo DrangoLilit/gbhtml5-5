@@ -13,16 +13,16 @@
     <header>
         <div class="menu container">
             <!-- Заглушка background - после Блок слайдера на задний план -->
-            <div class="logo-block">
+            <a href="#" class="logo-block">
                 <object class="logo-img" type="image/svg+xml" data="img/logos.svg">
                     <img class="logo-img" src="img/logos.png" alt="logo">
                 </object>
                 <span class="logo-name">Waxom</span>
-            </div>
+            </a>
             <nav class="menu-nav">
                 <ul class="menu-ul">
-                    <li class="menu-li"><a href="#" class="menu-a">Home</a></li>
-                    <li class="menu-li"><a href="#" class="menu-a menu-a-active">About Us</a></li>
+                    <li class="menu-li"><a href="#" class="menu-a menu-a-active">Home</a></li>
+                    <li class="menu-li"><a href="#" class="menu-a ">About Us</a></li>
                     <li class="menu-li"><a href="#" class="menu-a">Portfolio</a></li>
                     <li class="menu-li"><a href="#" class="menu-a">Features</a></li>
                     <li class="menu-li"><a href="#" class="menu-a">Blog</a></li>
@@ -80,39 +80,64 @@
         </article>
     </section>
 
+    <section class="partner">
+        <div class="container partner-cont">
+            <img class="partner-img" src="img/logo-01.png" alt="The barber">
+            <img class="partner-img" src="img/logo-02.png" alt="Delicious">
+            <img class="partner-img" src="img/logo-03.png" alt="Designer">
+            <img class="partner-img" src="img/logo-04.png" alt="Royal">
+        </div>
+    </section>
     <footer>
         <div class="footer-top">
             <div class="footer-top-cont container">
                 <div class="footer-top-column">
-                    <div class="logo-block">
+                    <a class="footer-logo logo-block">
                         <object class="logo-img" type="image/svg+xml" data="img/logos.svg">
                             <img class="logo-img" src="img/logos.png" alt="logo">
                         </object>
                         <span class="logo-name">Waxom</span>
-                    </div>
+                    </a>
+                    <div class="clearfix"></div>
                     <p class="footer-top-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
-                    <a class="footer-top-a" href="">Read More</a>
+                    <a class="footer-top-a footer-readmore" href="#">Read More</a>
                 </div>
                 <div class="footer-top-column recent-posts">
-                    <h3>Recent Posts</h3>
+                    <h3 class="footer-h3">Recent Posts</h3>
                     <div class="recent-post">
-                        <time class="recent-post-time recent-post-time-a" datetime="2015-09-08">September 08, 2015</time>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        <time class="recent-post-time" datetime="2015-09-08">September 08, 2015</time>
+                        <p class="footer-top-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
                     </div>
                     <div class="recent-post">
-                        <time class="recent-post-time recent-post-time-b" datetime="2015-09-08">September 08, 2015</time>
-                        <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                        <time class="recent-post-time-invert" datetime="2015-09-08">September 08, 2015</time>
+                        <p class="footer-top-p-invert">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
                     </div>
                     <div class="recent-post">
-                        <time class="recent-post-time recent-post-time-a" datetime="2015-09-08">September 08, 2015</time>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                        <time class="recent-post-time" datetime="2015-09-08">September 08, 2015</time>
+                        <p class="footer-top-p">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
                     </div>
                 </div>
                 <div class="footer-top-column">
-                    <h3>Our Twitter</h3>
+                    <h3 class="footer-h3">Our Twitter</h3>
+                    <div class="twit">
+                        <p class="footer-top-p"><span class="twit-nickname">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                        <span class="twit-time">3 mins ago</span>
+                    </div>
+                    <div class="twit">
+                        <p class="footer-top-p">Mirum est <span class="twit-hashtag">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                        <span class="twit-time">5 hours ago</span>
+                    </div>
+                    <div class="twit">
+                        <p class="footer-top-p">Soluta nobis option <a class="twit-a" href="bit.ly/1Hniso7">bit.ly/1Hniso7</a></p>
+                        <span class="twit-time">20 days ago</span>
+                    </div>
                 </div>
-                <div class="footer-top-column">
-                    <h3>Dribbble Widget</h3>
+                <div class="footer-top-column footer-top-widget">
+                    <h3 class="footer-h3">Dribbble Widget</h3>
+                    <img class="footer-top-widget-img" src="img/photo.jpg" alt="">
+                    <img class="footer-top-widget-img" src="img/photo2.jpg" alt="">
+                    <img class="footer-top-widget-img" src="img/photo3.jpg" alt="">
+                    <img class="footer-top-widget-img" src="img/photo4.jpg" alt="">
                 </div>
             </div>
         </div>
