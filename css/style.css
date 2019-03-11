@@ -19,6 +19,12 @@ h1 {
   font-weight: 700;
   padding: 14px 0;
 }
+h2 {
+  color: #555555;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
 h3 {
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -221,6 +227,71 @@ header {
 }
 /* /Блок с возможностями */
 /* Блок Блог */
+.blog {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blog-p {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-post {
+  max-width: 370px;
+}
+.blog-post-pic {
+  position: relative;
+}
+.blog-post-text {
+  text-align: left;
+}
+.blog-post-date {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.blog-post-date-d,
+.blog-post-date-m {
+  width: inherit;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+}
+.blog-post-date-d {
+  border-radius: 3px 3px 0 0;
+  background-color: #363636;
+  padding: 9px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.blog-post-date-m {
+  border-radius: 0 0 3px 3px;
+  background-color: #252525;
+  padding: 6px 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+.blog-post-title {
+  color: #555555;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.blog-post-readmore {
+  color: #c7b299;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
 /* /Блок Блог*/
 /* Блок партнеры */
 .partner {
