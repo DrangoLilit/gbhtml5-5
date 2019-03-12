@@ -293,8 +293,45 @@ header {
 
 /* /Блок с возможностями */
 
-/* Блок статистики */ 
+/* Блок статистики */
+.counter {
+    height: 300px;
+    background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 
+    &-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 @container-padding+130;
+        height: 100%;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-count {
+        color: @color-white;
+        font-family: @font-base;
+        font-size: 48px;
+        font-weight: 100;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &-p {
+        color: @font-brown;
+        text-transform: uppercase;
+    }
+
+    &-hr {
+        border: 2px solid @color-white;
+        width: 30px;
+        margin-top: 30px;
+    }
+}
 
 /* /Блок статистики */
 
@@ -310,12 +347,15 @@ header {
 
 .blog {
     text-align: center;
-    padding-left: @container-padding;
-    padding-right: @container-padding;
+    padding: 80px @container-padding;
 
     &-p {
         max-width: 760px;
         margin: 0 auto;
+        color: #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
     }
 
     &-posts {
@@ -379,7 +419,8 @@ header {
             padding-bottom: 20px;
             display: block;
         }
-        &-p{
+
+        &-p {
             color: #8c8c8c;
         }
 
@@ -392,6 +433,15 @@ header {
             margin-top: 25px;
             display: block;
         }
+    }
+
+    &-arrows {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-arrow {
+        padding: 4px;
     }
 }
 
