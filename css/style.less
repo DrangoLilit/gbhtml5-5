@@ -38,6 +38,7 @@ h2 {
     font-family: @font-title;
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 25px;
 }
 
 h3 {
@@ -292,7 +293,21 @@ header {
 
 /* /Блок с возможностями */
 
+/* Блок статистики */ 
+
+
+/* /Блок статистики */
+
+
 /* Блок Блог */
+.small-slider-pagi {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+}
+
 .blog {
     text-align: center;
     padding-left: @container-padding;
@@ -306,6 +321,7 @@ header {
     &-posts {
         display: flex;
         justify-content: space-between;
+        margin-top: 40px;
     }
 
     &-post {
@@ -317,6 +333,7 @@ header {
 
         &-text {
             text-align: left;
+            padding: 30px;
         }
 
         &-date {
@@ -359,6 +376,11 @@ header {
             font-family: @font-title;
             font-size: 20px;
             font-weight: 500;
+            padding-bottom: 20px;
+            display: block;
+        }
+        &-p{
+            color: #8c8c8c;
         }
 
         &-readmore {
@@ -367,6 +389,8 @@ header {
             font-size: 14px;
             font-weight: 300;
             line-height: 20px;
+            margin-top: 25px;
+            display: block;
         }
     }
 }
