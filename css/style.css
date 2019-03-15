@@ -227,6 +227,38 @@ header {
   margin: 30px auto 0;
 }
 /* /Блок с возможностями */
+/* Ideas block */
+.ideas-text {
+  max-width: 750px;
+  text-align: center;
+  margin: 80px auto 40px;
+}
+.ideas-p {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.ideas-pic {
+  position: relative;
+  height: 480px;
+}
+.ideas-img-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.ideas-img-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ideas-img-center {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+/* /Ideas block */
 /* Wordpress */
 .wordpress {
   height: 150px;
