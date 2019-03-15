@@ -227,6 +227,41 @@ header {
   margin: 30px auto 0;
 }
 /* /Блок с возможностями */
+/* Block Video */
+.block-video {
+  height: 100vh;
+  background: url(../img/video.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-video-img {
+  margin-bottom: 40px;
+}
+.block-video-text {
+  max-width: 550px;
+  text-align: center;
+}
+.block-video-h2 {
+  color: #ffffff;
+}
+.block-video-p {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+}
+.block-video-span {
+  color: #c7b299;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 40px;
+  display: block;
+}
+/* /Block Video */
 /* Блок с мобильным */
 .mobile {
   background: url(../img/iPhone_in_hand.png) no-repeat bottom left;
