@@ -59,7 +59,6 @@ button {
   border-radius: 3px;
   background-color: #998675;
   cursor: pointer;
-  margin: auto;
 }
 button:active {
   position: relative;
@@ -228,6 +227,35 @@ header {
   margin: 30px auto 0;
 }
 /* /Блок с возможностями */
+/* Wordpress */
+.wordpress {
+  height: 150px;
+  background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.wp {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.wp-h2 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+.wp-span {
+  color: #c7b299;
+}
+.wp-p {
+  color: #615855;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* /Wordpress */
 /* Block with tabs */
 .projects {
   padding: 80px 15px;
@@ -246,6 +274,7 @@ header {
   line-height: 28px;
 }
 .projects-btn {
+  margin: 0 auto;
   margin-top: 40px;
 }
 .projects-all,

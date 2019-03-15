@@ -78,7 +78,6 @@ button {
     border-radius: 3px;
     background-color: @light-brown;
     cursor: pointer;
-    margin: auto;
 }
 
 button:active {
@@ -294,6 +293,43 @@ header {
 
 /* /Блок с возможностями */
 
+/* Wordpress */
+
+.wordpress {
+    height: 150px;
+    background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.wp {
+    padding: 0 @container-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    &-h2 {
+        color: #ffffff;
+        font-family: @font-title;
+        font-size: 28px;
+        font-weight: 400;
+        padding-bottom: 8px;
+    }
+
+    &-span {
+        color: #c7b299;
+    }
+
+    &-p {
+        color: #615855;
+        font-family: @font-base;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+/* /Wordpress */
+
+
 /* Block with tabs */
 .projects {
     padding: 80px @container-padding;
@@ -314,6 +350,7 @@ header {
     }
 
     &-btn {
+        margin: 0 auto;
         margin-top: 40px;
     }
 }
