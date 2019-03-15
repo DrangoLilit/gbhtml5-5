@@ -80,24 +80,86 @@
             <hr class="service-hr">
         </article>
     </section>
-    <section class="projects">
-        <h2>Our Latest Projects.</h2>
-        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+    <section class="projects container">
+        <div class="projects-text">
+            <h2>Our Latest Projects.</h2>
+            <p class="projects-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        </div>
         <div class="tabs">
-            <input type="radio" id="tab-all">
-            <label for="tab-all">All</label>            
-            
-            <input type="radio" id="tab-web">
-            <label for="tab-web">All</label>
-            
+            <input class="tabs-input" name="project-tab" type="radio" id="tab-all" checked>
+            <label class="tabs-label" for="tab-all">All</label>
+
+            <input class="tabs-input" name="project-tab" type="radio" id="tab-web">
+            <label class="tabs-label" for="tab-web">Web Design</label>
+
+            <input class="tabs-input" name="project-tab" type="radio" id="tab-mob">
+            <label class="tabs-label" for="tab-mob">Mobile App</label>
+
+            <input class="tabs-input" name="project-tab" type="radio" id="tab-ill">
+            <label class="tabs-label" for="tab-ill">Illustration</label>
+
+            <input class="tabs-input" name="project-tab" type="radio" id="tab-ph">
+            <label class="tabs-label" for="tab-ph">Photography</label>
+
             <div id="projects-all" class="projects-all">
-                
-            </div>            
+                <div class="project">
+                    <img class="project-img" src="img/project1.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Claritas Etiam Processus</h3>
+                        <p class="project-p">Photography, Nature</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="img/project2.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Quam Nutamus Farum</h3>
+                        <p class="project-p">Graphic Design, Mock-Up</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="img/project3.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Usus Legentis Videntur</h3>
+                        <p class="project-p">Photography, Holiday</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="img/project4.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Claritas Etiam Processus</h3>
+                        <p class="project-p">Photography, Nature</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="img/project5.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Quam Nutamus Farum</h3>
+                        <p class="project-p">Graphic Design, Mock-Up</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project-img" src="img/project6.jpg" alt="">
+                    <div class="project-text">
+                        <h3 class="project-h3">Usus Legentis Videntur</h3>
+                        <p class="project-p">Photography, Holiday</p>
+                    </div>
+                </div>
+                <button class="projects-btn">Load More</button>
+            </div>
             <div id="projects-web" class="projects-web">
-                
+                Web Design
+            </div>
+            <div id="projects-mob" class="projects-mob">
+                Mobile
+            </div>
+            <div id="projects-ill" class="projects-ill">
+                Illustration
+            </div>
+            <div id="projects-ph" class="projects-ph">
+                Photography
             </div>
         </div>
-        
+
     </section>
     <section class="block-video">
         <div class="block-video-text">
